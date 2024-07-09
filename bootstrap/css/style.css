@@ -1,0 +1,362 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* image background */
+.first-section {
+  background-image: url(../img/hero-bg.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+.first-section .over-lays {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.navpart .navbar {
+  --bs-navbar-color: #fff;
+}
+.navpart .navbar .active {
+  color: #fff;
+}
+.bar {
+  height: 20px;
+}
+.navbar-nav .nav-link:hover {
+  color: #fff;
+}
+/* .navlink ul{
+  position: relative;
+}
+.navlink > ul > li > a::before{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
+}
+a:hover::before {
+  visibility: visible;
+  width: 60%;
+} */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #fff;
+  left: 7px;
+  bottom: -3px;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.nav-link:hover::after {
+  width: 70%;
+}
+.word {
+  position: relative;
+}
+.word::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 16%;
+  background-color: rgb(0, 120, 255);
+  top: 45px;
+}
+/* خط تحت لهيد */
+.head {
+  position: relative;
+}
+.head::before {
+  position: absolute;
+  content: "";
+  height: 6px;
+  width: 3%;
+  background-color: rgb(0, 120, 255);
+  top: 90px;
+  left: 49%;
+}
+.bor {
+  padding: 20px;
+  border: solid 4px rgb(0, 120, 255);
+  border-radius: 50%;
+  transition: all 1s;
+}
+.card-item:hover i {
+  background-color: rgb(0, 120, 255);
+  /* box-shadow: 10px 10px 5px 0px rgb(119, 177, 243); */
+  border-color: rgb(205, 225, 248);
+}
+.photo {
+  background-image: url(../img/counters-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.photo .overlay {
+  width: 100%;
+  background-color: rgba(0, 120, 255, 0.7);
+}
+.overlay .circle {
+  border: solid 10px rgb(205, 225, 240);
+  border-radius: 50%;
+}
+.borr {
+  border: solid 2px rgb(0, 120, 255);
+  border-radius: 50%;
+  padding: 5px;
+}
+.row .edit {
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.image {
+  overflow: hidden;
+}
+.mouse {
+  transition: all 1s;
+}
+.mouse:hover {
+  transform: scale(1.2);
+}
+.photo2 {
+  background-image: url(../img/overlay-bg.jpg);
+  background-size: cover;
+  height: 90%;
+
+  background-attachment: fixed;
+}
+#carousel .over-lay {
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  background-color: rgba(0, 120, 255, 0.7);
+}
+
+/* #portfolio .image-blog {
+  width: 100%;
+}
+
+#portfolio .image-blog img{
+  width: 100%;
+} */
+
+#portfolio {
+  background-color: rgba(245, 245, 245, 1);
+}
+.borde {
+  height: 1px;
+  width: 100%;
+  margin-top: 3px;
+  background-color: rgb(206, 203, 203);
+}
+/* #portfolio .borde {
+  padding-top: 5px;
+  border-bottom: 2px red solid;
+} */
+.inner span {
+  /* transform: translateX(200%); */
+  top: 55%;
+  left: 40%;
+}
+@media (max-width: 772px) {
+  .inner span {
+    /* transform: translateX(200%); */
+    top: 60%;
+    left: 40%;
+  }
+}
+.inner .caption {
+  transform: translateX(10px);
+}
+/* #portfolio .photo-name {
+  width: 13%;
+}
+.small-photo img {
+  width: 100%;
+} */
+.small-photo .photo-name {
+  transform: translateX(15px);
+}
+.clock {
+  transform: translateX(-13px);
+}
+.active-photo {
+  width: 13%;
+}
+.active-photo img {
+  width: 100%;
+}
+.touch {
+  transition: all 1s;
+}
+.touch:hover {
+  color: rgba(0, 120, 255, 1);
+}
+
+/* .container .middle {
+  transform: translateY(80px);
+} */
+.yourname,
+.youremail,
+.yoursubject,
+.textarea,
+.send,
+.header {
+  transform: translateY(60px);
+}
+.line {
+  height: 3px;
+  width: 19%;
+  background-color: blue;
+  transform: translateY(58px);
+}
+
+.line2 {
+  height: 3px;
+  width: 19%;
+  background-color: blue;
+  position: absolute;
+  top: 9%;
+}
+.send {
+  transform: translateX(200%);
+}
+.border-icon {
+  border: solid 3px rgb(0, 120, 255);
+  border-radius: 50%;
+  padding: 10px;
+  transition: all 1s;
+}
+.border-icon:hover {
+  background-color: rgb(0, 120, 255);
+  border: solid 3px rgb(159, 204, 255);
+  border-radius: 50%;
+}
+.button-message {
+  border: none;
+}
+.right-form {
+  transform: translateY(60px);
+}
+.bg-color {
+  background-color: rgba(0, 98, 211, 1);
+}
+@media (max-width: 772px) {
+  #services .mar {
+    margin-bottom: 20px;
+  }
+}
+.planes {
+  background-image: url(../img/overlay-bg.jpg);
+  background-size: cover;
+}
+@media (max-width: 772px) {
+  #portfolio .marg {
+    margin-top: 20px;
+  }
+  .planes {
+    width: 100%;
+    /* Use 100% of the container's width */
+    height: auto; /* Scale the height automatically */
+    display: block; /* Remove any extra space below the image */
+  }
+  .planes .overlay {
+    height: 100%;
+  }
+}
+
+.primary {
+  transform: translatey(300px);
+  text-align: center;
+  font-size: 50px;
+}
+.primary .size {
+  font-size: 70px;
+}
+
+.primary::after {
+  content: "";
+  animation: typing 8s infinite alternate;
+}
+
+@keyframes typing {
+  0% {
+    content: "";
+  }
+  5% {
+    content: "D";
+  }
+  10% {
+    content: "De";
+  }
+  15% {
+    content: "Des";
+  }
+  20% {
+    content: "Desi";
+  }
+  25% {
+    content: "Desig";
+  }
+  30% {
+    content: "Designe";
+  }
+  35% {
+    content: "Designer|";
+  }
+  40% {
+    content: "De";
+  }
+  45% {
+    content: "Deve";
+  }
+  50% {
+    content: "Develo";
+  }
+  55% {
+    content: "Develope";
+  }
+  60% {
+    content: "Developer|";
+  }
+  65% {
+    content: "";
+  }
+  70% {
+    content: "Fr";
+  }
+  75% {
+    content: "Free";
+  }
+  80% {
+    content: "Free la";
+  }
+  85% {
+    content: "Free lan";
+  }
+  90% {
+    content: "Free lance";
+  }
+  90% {
+    content: "Free lancer";
+  }
+  100% {
+    content: "Free lancer|";
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

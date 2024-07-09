@@ -1,0 +1,215 @@
+#Home {
+  width: 100%;
+  height: 95vh;
+  background-image: url(../img/events-heavenly-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  color: white;
+  position: relative;
+}
+.homeleyer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(214, 46, 51, 0.6);
+}
+ul {
+  list-style: none;
+}
+ul li {
+  text-decoration: none;
+}
+#menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.nav a {
+  padding: 20px 8px 20px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  color: white;
+}
+#Home h2 {
+  margin-top: 200px;
+}
+#Home h2,
+p {
+  text-align: center;
+}
+.nav {
+  background-color: #414658;
+}
+.nav a:hover {
+  color: rgba(214, 46, 51, 0.4);
+}
+.nav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#homecontent {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+#homecontent h2 {
+  font-size: 60px;
+}
+
+/*****************************************seconed section****************************************************/
+
+#Slider {
+  margin: 100px auto;
+  width: 50%;
+}
+#Slider h3 {
+  padding: 10px;
+  margin: 0;
+  background-color: rgba(214, 46, 51, 0.6);
+  cursor: pointer;
+  color: white;
+}
+#Slider div {
+  padding: 10px;
+  background-color: #ccc;
+  display: none;
+}
+
+/*---------------------------------------third section-------------------------------------------*/
+
+#Details {
+  background-image: url(../img/invitation-2508607__340.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  position: relative;
+  height: 330px;
+}
+.count-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(214, 46, 51, 0.6);
+  color: white;
+}
+
+.container {
+  padding: 100px 0px;
+}
+
+.box {
+  padding: 50px;
+  border: 1px solid #fff;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+/*==========================================section four==================================================*/
+#Contact {
+  margin-top: 100px;
+}
+
+#Contact .header h2 {
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #444;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#Contact .header p {
+  color: #777;
+  font-weight: 300;
+  font-size: 16px;
+}
+#Contact .con-info h3 {
+  color: #444;
+  font-size: 18px;
+  font-weight: bold;
+}
+#Contact .con-info p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #777;
+}
+
+#Contact .icons {
+  margin-top: 50px;
+}
+#Contact .icons p {
+  margin-bottom: 35px;
+}
+#Contact i {
+  margin-right: 20px;
+  color: #777;
+}
+#Contact .email {
+  color: #d62e33 !important;
+}
+
+#Contact .con-info .social-icon {
+  margin-top: 60px;
+  color: #777;
+}
+
+#Contact .con-info .social-icon i {
+  margin-right: 10px;
+  border: 1px solid #999;
+  width: 40px;
+  height: 40px;
+  line-height: 42px;
+  cursor: pointer;
+  text-align: center;
+}
+#Contact .con-info .social-icon i:hover {
+  color: #fff;
+  background-color: #d62e33;
+  border: 1px solid #d62e33;
+}
+#Contact form input,
+#Contact form textarea {
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+#Contact form textarea {
+  height: 200px;
+  resize: vertical;
+}
+
+#Contact form button {
+  background-color: #d62e33;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+#count {
+  font-size: 20px;
+  color: #d62e33;
+}
+
+@media screen and (max-height: 450px) {
+  .nav {
+    padding-top: 15px;
+  }
+  .nav a {
+    font-size: 18px;
+  }
+}
